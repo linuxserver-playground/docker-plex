@@ -27,7 +27,7 @@ Find us at:
 
 [![GitHub Release](https://img.shields.io/github/release/linuxserver-playground/docker-plex.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&logo=github)](https://github.com/linuxserver-playground/docker-plex/releases)
 [![GitHub Package Repository](https://img.shields.io/static/v1.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=linuxserver.io&message=GitHub%20Package&logo=github)](https://github.com/linuxserver-playground/docker-plex/packages)
-[![Docs](https://img.shields.io/static/v1.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=linuxserver.io&message=Docs&logo=materialformkdocs)](https://linuxserver-playground.github.io/docs/images/docker-plex)
+[![Docs](https://img.shields.io/static/v1.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=linuxserver.io&message=Docs&logo=materialformkdocs)](https://linuxserver-playground.github.io/site/images/plex/)
 [![CI](https://ci.thelamer.duckdns.org:8443/badge/plex/latest.svg)](https://ci.thelamer.duckdns.org:8443/images/plex/latest)
 
 [Plex](https://plex.tv) organizes video, music and photos from personal media libraries and streams them to smart TVs, streaming boxes and mobile devices. This container is packaged as a standalone Plex Media Server. Straightforward design and bulk actions mean getting things done faster.
@@ -100,7 +100,7 @@ Best effort is made to install tools to allow mounting in /dev/dri on Arm device
 
 ## Read-Only Operation
 
-This image can be run with a read-only container filesystem. For details please [read the docs](https://linuxserver-playground.github.io/docs/misc/read-only/).
+This image can be run with a read-only container filesystem. For details please [read the docs](https://linuxserver-playground.github.io/site/docs/misc/read-only/).
 
 ### Caveats
 
@@ -109,7 +109,7 @@ This image can be run with a read-only container filesystem. For details please 
 
 ## Non-Root Operation
 
-This image can be run with a non-root user. For details please [read the docs](https://linuxserver-playground.github.io/docs/misc/non-root/).
+This image can be run with a non-root user. For details please [read the docs](https://linuxserver-playground.github.io/site/docs/misc/non-root/).
 
 ### Caveats
 
@@ -123,7 +123,7 @@ To help you get started creating a container from this image you can either use 
 > [!NOTE]
 > Unless a parameter is flagged as 'optional', it is *mandatory* and a value must be provided.
 
-### docker-compose (recommended, [click here for more info](https://linuxserver-playground.github.io/docs/general/docker-compose))
+### docker-compose (recommended, [click here for more info](https://linuxserver-playground.github.io/site/docs/general/docker-compose))
 
 ```yaml
 ---
@@ -178,8 +178,8 @@ Containers are configured using parameters passed at runtime (such as those abov
 | `-v /config` | Plex library location. *This can grow very large, 50gb+ is likely for a large collection.* |
 | `-v /tv` | Media goes here. Add as many as needed e.g. `/movies`, `/tv`, etc. |
 | `-v /movies` | Media goes here. Add as many as needed e.g. `/movies`, `/tv`, etc. |
-| `--read-only=true` | Run container with a read-only filesystem. Please [read the docs](https://linuxserver-playground.github.io/docs/misc/read-only/). |
-| `--user=1000:1000` | Run container with a non-root user. Please [read the docs](https://linuxserver-playground.github.io/docs/misc/non-root/). |
+| `--read-only=true` | Run container with a read-only filesystem. Please [read the docs](https://linuxserver-playground.github.io/site/docs/misc/read-only/). |
+| `--user=1000:1000` | Run container with a non-root user. Please [read the docs](https://linuxserver-playground.github.io/site/docs/misc/non-root/). |
 
 ## Environment variables from files (Docker secrets)
 
@@ -245,7 +245,7 @@ uid=1000(your_user) gid=1000(your_user) groups=1000(your_user)
 
 ## Docker Mods
 
-[![Docker Mods](https://img.shields.io/static/v1.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=plex&message=mods&logo=docker)](https://linuxserver-playground.github.io/hub/mods/?image=plex "view available mods for this container.") [![Docker Universal Mods](https://img.shields.io/static/v1.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=universal&message=mods&logo=docker)](https://linuxserver-playground.github.io/hub/mods/?image=universal "view available universal mods.")
+[![Docker Mods](https://img.shields.io/static/v1.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=plex&message=mods&logo=docker)](https://linuxserver-playground.github.io/site/mods/?image=plex "view available mods for this container.") [![Docker Universal Mods](https://img.shields.io/static/v1.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=universal&message=mods&logo=docker)](https://linuxserver-playground.github.io/site/mods/?image=universal "view available universal mods.")
 
 We publish various [Docker Mods](https://github.com/linuxserver-playground/docker-mods) to enable additional functionality within the containers. The list of Mods available for this image (if any) as well as universal mods that can be applied to any one of our images can be accessed via the badges above.
 
