@@ -2,7 +2,7 @@
 
 FROM ghcr.io/linuxserver/unrar:latest AS unrar
 
-FROM ghcr.io/linuxserver/baseimage-ubuntu:resolute
+FROM ghcr.io/linuxserver-playground/baseimage-ubuntu:resolute
 
 # set version label
 ARG BUILD_DATE
