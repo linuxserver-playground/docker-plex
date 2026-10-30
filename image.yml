@@ -11,6 +11,11 @@ upstream:
     type: json
     url: https://plex.tv/api/downloads/5.json
     jq: .computer.Linux.version
+  notes:
+    type: json
+    url: https://plex.tv/api/downloads/5.json
+    jq: |-
+      .computer.Linux | select(.version == "${VERSION}") | "### Added\n\(.items_added)\n\n### Fixed\n\(.items_fixed)"
 
 release:
   branch: master
